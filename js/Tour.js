@@ -67,6 +67,8 @@ AFRAME.registerComponent("tour", {
             opacity: 1,
         });
 
+        entityEl.setAttribute("cursor-listener", {});
+
         return entityEl;
     },
     createThumbNail: function (item) {
