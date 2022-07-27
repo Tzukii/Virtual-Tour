@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8" />
     <title>Virtual Tour</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
 
-    <script src="js/Tour.js"></script>
     <script src="js/CursorEvents.js"></script>
+    <script src="js/Tour.js"></script>
+    <script src="js/SideView.js"></script>
   </head>
-
   <body>
     <a-scene id="main-scene">
       <a-sky id="main-container" radius="5000" color="#98DAFC"></a-sky>
 
-      <a-entity id="places-container" tour cursor-listener></a-entity>
+      <a-entity id="places-container" cursor-listener tour></a-entity>
 
       <a-entity
         id="side-view-container"
